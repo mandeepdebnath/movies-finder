@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Searchbar from "./components/Searchbar";
 import Movies from "./components/Movies";
 import Info from "./components/Info";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -40,6 +41,7 @@ function App() {
         <Searchbar function={searchMovies} query={query} setQuery={setQuery} />
         {loader ? <ScaleLoader css={loaderstyle} /> : <Movies data={movies} />}
       </Container>
+      <Footer />
     </div>
   );
 }

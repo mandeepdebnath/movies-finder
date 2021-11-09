@@ -12,4 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f2f2f253;
+  height: 100vh;
+  position: relative;
 }
